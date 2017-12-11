@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tajtesz.rgbguesser.GameActivity">
+
+    <TextView
+        android:id="@+id/colorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/color"
+        android:textSize="40sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/butt11"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="48dp"
+        android:background="@android:color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colorText" />
+
+    <Button
+        android:id="@+id/butt12"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/black"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/butt11" />
+
+    <Button
+        android:id="@+id/butt21"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butt11" />
+
+    <Button
+        android:id="@+id/butt22"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/black"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/butt21" />
+
+    <Button
+        android:id="@+id/butt31"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butt21" />
+
+    <Button
+        android:id="@+id/butt32"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/black"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/butt31" />
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/butt31"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        android:layout_marginTop="0dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score"
+        android:textSize="30sp"
+        android:layout_marginLeft="9dp"
+        app:layout_constraintLeft_toLeftOf="@+id/butt32"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/butt32" />
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toRightOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        android:layout_marginTop="0dp" />
+
+</android.support.constraint.ConstraintLayout>
